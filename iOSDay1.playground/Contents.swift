@@ -389,8 +389,8 @@ var robBank = true
 var startAFire = true
 if robBank && startAFire {
     action = "go to jail"
-    }
-else println("Home Free") {
+    } else {
+        println("Home Free")
     }
 /*:
 ## Loops
@@ -441,7 +441,7 @@ Swift provides a very simple way to loop over all the elements in an array. Beca
 ### Have a go create a array of your favorite things. Make your array size atleast 10 entries. Then use the for in construct to iterate over the collection of your favorite things.
 */
 // Type code here !!!
-var cars = ["Chrysler", "Lexus", "Porsche" "Lambo", "Mazerati", "Mercedes", "Tesla", "Pontiac", "Ford", "Jeep"]
+var cars = ["Chrysler", "Lexus", "Porsche", "Lambo", "Mazerati", "Mercedes", "Tesla", "Pontiac", "Ford", "Jeep"]
 for car in cars {
         println("Nice \(cars)")
     
@@ -597,7 +597,7 @@ case 4...5:
 println("Bronze")
 default:
 println("Blang")
-
+}
 /*:
 ## Functions
 Functions let you define re-usable pieces of code that perform specific pieces of functionality. Usually functions are able to receive some values to modify the way they work, but it's not required.
@@ -702,12 +702,12 @@ You can now call that by passing the game name in and acting on the result:
 
 */
 func someComics(name: String) -> Bool {
-    is name =="Batman" { return true }
+    if name == "Batman"
+    {
+        return true
+    }
     return false
-    if someComics =="spidy" {
-    action = "Punch!"
-}
-/*:
+}/*:
 
 Congratulations on finishing day ones assignment now you can post your finished playground to gitHub.
 
